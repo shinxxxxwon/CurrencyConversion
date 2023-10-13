@@ -46,6 +46,7 @@ class PickerViewController: UIViewController {
         
         let resultValue = String(format: "%.2f", selectedValue * usdValue)
         return resultValue
+        
     }
     
     func fetchJson() {

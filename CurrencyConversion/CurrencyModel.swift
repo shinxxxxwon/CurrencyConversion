@@ -8,6 +8,7 @@
 import Foundation
 
 struct CurrencyModel: Codable {
+    
     let result: String?
     let provider: String?
     let baseCode: String?
