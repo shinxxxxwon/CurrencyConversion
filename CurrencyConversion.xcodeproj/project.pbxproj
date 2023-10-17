@@ -19,6 +19,9 @@
 		EF9852832AD919CA009DAD78 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9852822AD919CA009DAD78 /* ListViewController.swift */; };
 		EF9852852AD91D62009DAD78 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9852842AD91D62009DAD78 /* TabBarController.swift */; };
 		EF9852872AD920D2009DAD78 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9852862AD920D2009DAD78 /* CurrencyModel.swift */; };
+		EFC5672C2ADE40AC0060628E /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC5672A2ADE40AC0060628E /* CurrencyCell.swift */; };
+		EFC5672D2ADE40AC0060628E /* CurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFC5672B2ADE40AC0060628E /* CurrencyCell.xib */; };
+		EFC5672F2ADE4CD20060628E /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC5672E2ADE4CD20060628E /* NetworkLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		EF9852822AD919CA009DAD78 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		EF9852842AD91D62009DAD78 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		EF9852862AD920D2009DAD78 /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
+		EFC5672A2ADE40AC0060628E /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
+		EFC5672B2ADE40AC0060628E /* CurrencyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyCell.xib; sourceTree = "<group>"; };
+		EFC5672E2ADE4CD20060628E /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				EF9852522AD9167E009DAD78 /* AppDelegate.swift */,
+				EFC5672A2ADE40AC0060628E /* CurrencyCell.swift */,
+				EFC5672E2ADE4CD20060628E /* NetworkLayer.swift */,
+				EFC5672B2ADE40AC0060628E /* CurrencyCell.xib */,
 				EF9852542AD9167E009DAD78 /* SceneDelegate.swift */,
 				EF9852562AD9167E009DAD78 /* PickerViewController.swift */,
 				EF9852862AD920D2009DAD78 /* CurrencyModel.swift */,
@@ -240,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC5672D2ADE40AC0060628E /* CurrencyCell.xib in Resources */,
 				EF98525F2AD9167F009DAD78 /* LaunchScreen.storyboard in Resources */,
 				EF98525C2AD9167F009DAD78 /* Assets.xcassets in Resources */,
 				EF98525A2AD9167E009DAD78 /* Main.storyboard in Resources */,
@@ -271,6 +281,8 @@
 				EF9852532AD9167E009DAD78 /* AppDelegate.swift in Sources */,
 				EF9852872AD920D2009DAD78 /* CurrencyModel.swift in Sources */,
 				EF9852832AD919CA009DAD78 /* ListViewController.swift in Sources */,
+				EFC5672F2ADE4CD20060628E /* NetworkLayer.swift in Sources */,
+				EFC5672C2ADE40AC0060628E /* CurrencyCell.swift in Sources */,
 				EF9852852AD91D62009DAD78 /* TabBarController.swift in Sources */,
 				EF9852552AD9167E009DAD78 /* SceneDelegate.swift in Sources */,
 			);

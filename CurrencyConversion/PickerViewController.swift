@@ -50,34 +50,13 @@ class PickerViewController: UIViewController {
     }
     
     func fetchJson() {
-        let urlString = "https://open.er-api.com/v6/latest/USD"
-        guard let url = URL(string: urlString) else {
-            return
+        NetworkLayer.fetchJson { model in
+            self.rates = model.rates?.sorted{ $0.key < $1.key }
+            
+            DispatchQueue.main.async {
+                self.currencyPicker.reloadAllComponents()
+            }
         }
-        
-        //data Task
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            
-            guard let data = data else {
-                return
-            }
-            
-            do{
-                let currentModel = try JSONDecoder().decode(CurrencyModel.self, from: data)
-                
-                self.rates = currentModel.rates?.sorted{ $0.key < $1.key }
-                
-                //picker 새로고침
-                DispatchQueue.main.async {
-                    self.currencyPicker.reloadAllComponents()
-                }
-                
-            }catch{
-                print(error)
-            }
-            
-        }.resume()
-        
     }
 
 }
